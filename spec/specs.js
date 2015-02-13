@@ -3,7 +3,7 @@ describe("triangle", function() {
     expect(triangle(2, 2, 8)).to.equal(false);
   });
 
-  it("compares the length of 3 sides and returns true if it is a valid triangle", function() {
-    expect(triangle(5, 5, 8)).to.equal(true);
-  })
+  it("returns the number of equal sides", function() {
+    expect(triangle(5, 5, 8)).to.equal(2);
+  });
 });

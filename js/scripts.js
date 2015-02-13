@@ -23,18 +23,18 @@ $(document).ready(function() {
 
     var numberOfSides = triangleChecker(side1, side2, side3);
     if (numberOfSides === 1) {
-      var typeOfTriangle = "a scalene";
-      $(".typeOfTriangle").text(typeOfTriangle);
+      var typeOfTriangle = "forms a scalene";
+      $("#typeOfTriangle").text(typeOfTriangle);
       $("#valid").show();
       $("#not-valid").hide();
     } else if (numberOfSides === 2) {
-      var typeOfTriangle = "an isosceles";
-      $(".typeOfTriangle").text(typeOfTriangle);
+      var typeOfTriangle = "forms an isosceles";
+      $("#typeOfTriangle").text(typeOfTriangle);
       $("#valid").show();
       $("#not-valid").hide();
     } else if (numberOfSides === 3) {
-      var typeOfTriangle = "an equilateral";
-      $(".typeOfTriangle").text(typeOfTriangle);
+      var typeOfTriangle = "forms an equilateral";
+      $("#typeOfTriangle").text(typeOfTriangle);
       $("#valid").show();
       $("#not-valid").hide();
     } else {
